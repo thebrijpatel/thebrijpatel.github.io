@@ -34,11 +34,7 @@ body {
   margin: 0;
 }
 
-@media(max-width: 324px) {
-  span {
-    font-size: 5px;
-  }
-}
+
 
 @media (min-width:445px) {
   .bp-keyword {
@@ -56,6 +52,12 @@ body {
     font-size: 15px;
   }
 }
+
+/* @media (max-width: 283px) {
+  span {
+    font-size: 9px !important;
+  }
+} */
 
 @media (max-width:444px){
   .bp-keyword {
@@ -76,7 +78,7 @@ body {
     margin-right: 10px;
   }
   span {
-    font-size: 13.2px;
+    font-size: 10px;
   }
 }
 
