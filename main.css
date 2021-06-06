@@ -34,6 +34,11 @@ body {
   margin: 0;
 }
 
+@media(max-width: 324px) {
+  span {
+    font-size: 5px;
+  }
+}
 
 @media (min-width:445px) {
   .bp-keyword {
@@ -43,10 +48,8 @@ body {
     margin-left: -27px;
   }
   .vcenter-item {
-    /* margin-top: 50px; */
     margin-left: 10px;
     margin-right: 10px;
-    /* width: 100%; */
     margin: auto;
   }
   span {
@@ -109,7 +112,6 @@ body {
 
 .browser__body {
   background-color: 000000e3 !important;
-  /* border: 1px solid black; */
 }
 
 .toolbar__control:before {
