@@ -1,61 +1,187 @@
-#page-content {
-    width: 100vw;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Lobster|Roboto|Old+Standard+TT|Raleway);
+
+
+html {
+  font: 100%/1.5 "Titillium Web", "Lucida Grande", "Lucida Sans", sans-serif !important;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background: -webkit-linear-gradient(45deg, #2F1C53, #6a2bd2, #aa4fbb)!important;
+  background: -moz-linear-gradient(45deg, #2F1C53, #6a2bd2, #aa4fbb)!important;
+  background: -ms-linear-gradient(45deg, #2F1C53, #6a2bd2, #aa4fbb);
+  background: -o-linear-gradient(45deg, #2F1C53, #6a2bd2, #aa4fbb) !important;
+  background: linear-gradient(45deg, #2F1C53, #6a2bd2, #aa4fbb) !important;
+}
+
+body {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  background-color: #000000e3 !important;
+  border: none;
+  border-radius: unset;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+body {
+  margin: 0;
+}
+
+
+@media (min-width:445px) {
+  .bp-keyword {
+    margin-left: -20px;
   }
-  
-  #floating-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+  .bp1 {
+    margin-left: -27px;
   }
-  
-  #inner-content {
-    width: 50vw;
+  .vcenter-item {
+    /* margin-top: 50px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    /* width: 100%; */
+    margin: auto;
   }
-  
-  body {
-    background-color: #E7ECEF;
+  span {
+    font-size: 15px;
   }
-  
-  p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    color: #272932;
+}
+
+@media (max-width:444px){
+  .bp-keyword {
+    margin-left: -104px;
+    color: #859900;
+    line-height: 21px;
   }
-  
-  h2 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 800;
-    color: #272932;
+  .bp-params {
+    margin-left: -92px;
+    color: #6C71C4;
   }
-  
-  p > a {
-    position: relative;
-    color: #000;
-    text-decoration: none;
+  .bp1 {
+    margin-left: -118px;
+    color: white;
   }
-  
-  p > a:hover {
-    color: #000;
+  .vcenter-item {
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  
-  p > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
+  span {
+    font-size: 13.2px;
   }
-  
-  p > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-  }
+}
+
+.vcenter-item {
+  margin-top: 10%;
+}
+
+
+.bp {
+  margin-left: 5px;
+}
+
+.bp-keyword {
+  color: #859900;
+  line-height: 21px;
+}
+
+.bp-params {
+  color: #6C71C4;
+}
+
+.bp1, .bp{
+  color: white;
+}
+
+.val {
+  color: #628BA1;
+}
+
+.browser__toolbar {
+  background-color: black;
+}
+
+.browser__body {
+  background-color: 000000e3 !important;
+  /* border: 1px solid black; */
+}
+
+.toolbar__control:before {
+  background-color: #F6624F;
+}
+
+.toolbar__control {
+  background-color: #FCB428;
+}
+
+.toolbar__control:after {
+  background-color: #23D03F;
+}
+
+.toolbar__control,
+.toolbar__control:before,
+.toolbar__control:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.toolbar__control {
+  position: relative;
+  margin-left: 26px;
+}
+.toolbar__control:before, .toolbar__control:after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+.toolbar__control:before {
+  left: -120%;
+}
+.toolbar__control:after {
+  right: -120%;
+}
+
+.icon {
+  color: black;
+  line-height: 28px;
+  margin-right: 12px;
+  float: right;
+}
+
+a {
+  position: relative;
+  color: #628BA1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #628BA1;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #628BA1;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
